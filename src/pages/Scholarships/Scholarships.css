@@ -1,0 +1,15 @@
+.sc-container {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+  
+  .box {
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
