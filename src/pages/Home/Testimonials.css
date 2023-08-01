@@ -1,0 +1,178 @@
+.testimonials {
+    background-color: #e6eef3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .testimonials .group-wrapper {
+    background-color: #e6eef3;
+    border: 1px none;
+    height: 1024px;
+    width: 1440px;
+  }
+  
+  .testimonials .group {
+    height: 752px;
+    left: 135px;
+    position: relative;
+    top: 136px;
+    width: 1170px;
+  }
+  
+  .testimonials .div {
+    height: 95px;
+    left: 317px;
+    position: absolute;
+    top: 0;
+    width: 541px;
+  }
+  
+  .testimonials .test-text-wrapper {
+    color: #000000;
+    font-family: "Courier Prime", Helvetica;
+    font-size: 35px;
+    font-weight: 400;
+    left: 142px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .testimonials .p {
+    color: #000000;
+    font-family: "Crete Round-Regular", Helvetica;
+    font-size: 35px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 50px;
+  }
+  
+  .testimonials .testimonial {
+    box-shadow: 0px 4px 4px #00000040;
+    height: 587px;
+    left: 0;
+    position: absolute;
+    top: 165px;
+    width: 370px;
+  }
+  
+  .testimonials .testimonial-2 {
+    box-shadow: 0px 4px 4px #00000040;
+    height: 587px;
+    left: 400px;
+    position: absolute;
+    top: 165px;
+    width: 370px;
+  }
+  
+  .testimonials .div-wrapper {
+    box-shadow: 0px 4px 4px #00000040;
+    height: 587px;
+    left: 800px;
+    position: absolute;
+    top: 165px;
+    width: 370px;
+  }
+  
+  .testimonials .group-2 {
+    height: 587px;
+    left: -800px;
+    position: relative;
+    width: 1182px;
+  }
+  
+  .testimonials .overlap {
+    height: 587px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 370px;
+  }
+  
+  .testimonials .rectangle {
+    background-color: #1b6b93;
+    border-radius: 30px;
+    height: 507px;
+    left: 0;
+    position: absolute;
+    top: 80px;
+    width: 370px;
+  }
+  
+  .testimonials .mask-group {
+    height: 161px;
+    left: 105px;
+    position: absolute;
+    top: 0;
+    width: 160px;
+  }
+  
+  .testimonials .test-text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    left: 87px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    top: 178px;
+    white-space: nowrap;
+  }
+  
+  .testimonials .test-text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 22px;
+    font-weight: 700;
+    left: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 255px;
+    width: 317px;
+  }
+  
+  .testimonials .overlap-group {
+    height: 587px;
+    left: 400px;
+    position: absolute;
+    top: 0;
+    width: 370px;
+  }
+  
+  .testimonials .test-text-wrapper-4 {
+    color: #ffffff;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 25px;
+    font-weight: 700;
+    left: 87px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    top: 178px;
+    width: 203px;
+  }
+  
+  .testimonials .overlap-group-2 {
+    height: 587px;
+    left: 800px;
+    position: absolute;
+    top: 0;
+    width: 370px;
+  }
+  
