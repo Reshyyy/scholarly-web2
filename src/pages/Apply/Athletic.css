@@ -1,0 +1,516 @@
+.APPLICANT-APPLY {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .APPLICANT-APPLY .overlap-wrapper {
+    background-color: #ffffff;
+    border: 1px none;
+    height: 1886px;
+    width: 1440px;
+  }
+  
+  .APPLICANT-APPLY .overlap {
+    background-color: #07a3fb1a;
+    height: 1886px;
+    position: relative;
+  }
+  
+  .APPLICANT-APPLY .applicant {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .APPLICANT-APPLY .overlap-group {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    height: 64px;
+    left: -2px;
+    position: relative;
+    top: -2px;
+    width: 1444px;
+  }
+  
+  .APPLICANT-APPLY .div {
+    color: #00446c;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 229px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-2 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 628px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-3 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 774px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-4 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 961px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .scholarlylogocropped {
+    height: 50px;
+    left: 161px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 50px;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-5 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 543px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .log-out-button {
+    height: 38px;
+    left: 1187px;
+    position: absolute;
+    top: 16px;
+    width: 98px;
+  }
+  
+  .APPLICANT-APPLY .PROFILE-ICON {
+    height: 45px;
+    left: 1098px;
+    position: absolute;
+    top: 8px;
+    width: 64px;
+  }
+  
+  .APPLICANT-APPLY .overlap-2 {
+    height: 1824px;
+    left: 158px;
+    position: absolute;
+    top: 62px;
+    width: 1123px;
+  }
+  
+  .APPLICANT-APPLY .rectangle {
+    background-color: #ffffff;
+    height: 1824px;
+    left: 2px;
+    position: absolute;
+    top: 0;
+    width: 1121px;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-6 {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 212px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-7 {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 313px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-8 {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 418px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .p {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 523px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-9 {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 675px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .why-do-you-believe {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 941px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .span {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-10 {
+    font-family: "Roboto Flex-Italic", Helvetica;
+    font-style: italic;
+  }
+  
+  .APPLICANT-APPLY .describe-a {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 1231px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-11 {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 1529px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-12 {
+    color: #000000;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 780px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-13 {
+    color: #423f3f;
+    font-family: "Roboto Flex-Italic", Helvetica;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 874px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-14 {
+    color: #413f3f;
+    font-family: "Roboto Flex-Italic", Helvetica;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 615px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-15 {
+    color: #0ca7ff;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 390px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 876px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-16 {
+    color: #000000;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 77px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-17 {
+    color: #000000;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 77px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 31px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .rectangle-2 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 14px;
+    height: 45px;
+    left: 97px;
+    position: absolute;
+    top: 245px;
+    width: 930px;
+  }
+  
+  .APPLICANT-APPLY .rectangle-3 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 14px;
+    height: 45px;
+    left: 97px;
+    position: absolute;
+    top: 346px;
+    width: 930px;
+  }
+  
+  .APPLICANT-APPLY .rectangle-4 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 14px;
+    height: 45px;
+    left: 97px;
+    position: absolute;
+    top: 451px;
+    width: 930px;
+  }
+  
+  .APPLICANT-APPLY .rectangle-5 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 14px;
+    height: 45px;
+    left: 97px;
+    position: absolute;
+    top: 556px;
+    width: 930px;
+  }
+  
+  .APPLICANT-APPLY .rectangle-6 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 14px;
+    height: 45px;
+    left: 97px;
+    position: absolute;
+    top: 708px;
+    width: 930px;
+  }
+  
+  .APPLICANT-APPLY .rectangle-7 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 14px;
+    height: 45px;
+    left: 97px;
+    position: absolute;
+    top: 813px;
+    width: 930px;
+  }
+  
+  .APPLICANT-APPLY .rectangle-8 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 14px;
+    height: 237px;
+    left: 97px;
+    position: absolute;
+    top: 974px;
+    width: 930px;
+  }
+  
+  .APPLICANT-APPLY .rectangle-9 {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 14px;
+    height: 237px;
+    left: 97px;
+    position: absolute;
+    top: 1264px;
+    width: 930px;
+  }
+  
+  .APPLICANT-APPLY .submit-my-application-component {
+    left: 458px !important;
+    position: absolute !important;
+    top: 1644px !important;
+  }
+  
+  .APPLICANT-APPLY .rectangle-10 {
+    background-color: #134f82;
+    height: 99px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1123px;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-18 {
+    color: #fdfdfd;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    left: 71px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-19 {
+    color: #0ca7ff;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 97px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 1568px;
+    white-space: nowrap;
+  }
+  
+  .APPLICANT-APPLY .text-wrapper-20 {
+    color: #0ca7ff;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 360px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 616px;
+    white-space: nowrap;
+  }
+  

@@ -1,0 +1,151 @@
+.applicant {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .applicant .overlap-wrapper {
+    background-color: #ffffff;
+    border: 1px none;
+    height: 1024px;
+    width: 1440px;
+  }
+  
+  .applicant .overlap {
+    background-color: #07a3fb1a;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .applicant .back-scholarship-component {
+    left: 151px !important;
+    position: absolute !important;
+    top: 190px !important;
+  }
+  
+  .applicant .back-scholarship-instance {
+    width: 164px !important;
+  }
+  
+  .applicant .recommended-view {
+    left: 160px !important;
+    position: absolute !important;
+    top: 249px !important;
+  }
+  
+  .applicant .overlap-group-wrapper {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .applicant .overlap-group {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    height: 64px;
+    left: -2px;
+    position: relative;
+    top: -2px;
+    width: 1444px;
+  }
+  
+  .applicant .div {
+    color: #00446c;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 229px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant .text-wrapper-11 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 628px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .applicant .text-wrapper-12 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 774px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant .text-wrapper-13 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 961px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant .scholarlylogocropped {
+    height: 50px;
+    left: 161px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 50px;
+  }
+  
+  .applicant .text-wrapper-14 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 543px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .applicant .log-out-button {
+    height: 38px;
+    left: 1187px;
+    position: absolute;
+    top: 16px;
+    width: 98px;
+  }
+  
+  .applicant .PROFILE-ICON {
+    height: 45px;
+    left: 1098px;
+    position: absolute;
+    top: 8px;
+    width: 64px;
+  }
+  
