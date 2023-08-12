@@ -1,5 +1,5 @@
 import React from "react";
-import { FilterSidebar } from "./FilterSidebar";
+
 import { ViewdetailsButton } from "./ViewdetailsButton";
 import "./Recommendations.css";
 

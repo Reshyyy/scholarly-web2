@@ -1,5 +1,4 @@
 import React from "react";
-import { BackScholarship } from "./BackScholarship";
 import { ScholarshipView } from "./ScholarshipView";
 import "./ScholarshipsView.css";
 
