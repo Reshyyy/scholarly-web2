@@ -1,108 +1,33 @@
-/* Global styles for body and other elements */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #3A5180;
-}
-  
-  .signup-container {
+.sign-up-page {
+    background-color: #ffffff;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    min-height: 100vh;
-  }
-
-  .radio-group {
-    display: flex;
-  }
-  
-  .radio-group label {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 15px;
-  }
-
-  .signup-form .form-buttons {
-    margin-left: 480px;
-  }
-
-  .signup-form .form-group span{
-    color: red;
-  }
-
-  .signup-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    max-width: 800px;
-    background-color: transparent;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .signup-container .signuptitle {
-    width: 100%;
-    text-align: left;
-    font-size: 24px;
-    margin-left: 550px;
-    margin-bottom: 70px;
-    color: white;
-    text-decoration-line: underline;
+  .sign-up-page .overlap-wrapper {
+    background-color: #ffffff;
+    border: 1px none;
+    height: 1024px;
+    width: 1440px;
   }
   
-  .form-group {
-    width: calc(33.33% - 10px); /* Three textboxes per row with 10px spacing */
-    margin-right: 10px; /* Spacing between textboxes */
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
+  .sign-up-page .overlap {
+    background-color: #07a3fb1a;
+    height: 1024px;
+    position: relative;
   }
   
-  .form-group label {
-    font-size: 16px;
-    margin-bottom: 5px;
+  .sign-up-page .nav-bar-variant2 {
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
   }
   
-  .form-group input,
-  .form-group select {
-    width: 80%; /* Take the full width of the form-group container */
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .form-buttons {
-    width: 35%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .form-buttons button {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-  
-  .form-buttons button:first-child {
-    font-weight: bold;
-    margin-right: 10px;
-    background-color: #f44336;
-    color: #fff;
-  }
-  
-  .form-buttons button:last-child {
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #4caf50;
-    color: #000;
+  .sign-up-page .sign-up-instance {
+    left: 445px !important;
+    position: absolute !important;
+    top: 166px !important;
   }
   

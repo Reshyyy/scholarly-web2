@@ -1,0 +1,41 @@
+.sign-in-page {
+    background-color: #e7f6ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sign-in-page .div-2 {
+    background-color: #e7f6ff;
+    border: 1px none;
+    height: 1024px;
+    overflow: hidden;
+    position: relative;
+    width: 1440px;
+  }
+  
+  .sign-in-page .nav-bar-wrapper {
+    border: 1px dashed;
+    border-color: #9747ff;
+    border-radius: 5px;
+    height: 84px;
+    left: -20px;
+    overflow: hidden;
+    position: absolute;
+    top: -20px;
+    width: 1460px;
+  }
+  
+  .sign-in-page .property-default {
+    left: 20px !important;
+    position: relative !important;
+    top: 20px !important;
+  }
+  
+  .sign-in-page .signin-instance {
+    left: 461px !important;
+    position: absolute !important;
+    top: 166px !important;
+  }
+  

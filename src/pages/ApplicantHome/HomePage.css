@@ -1,0 +1,636 @@
+.applicant-home-page {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .applicant-home-page .overlap-wrapper {
+    background-color: #ffffff;
+    border: 1px none;
+    height: 1735px;
+    overflow: hidden;
+    width: 1440px;
+  }
+  
+  .applicant-home-page .overlap {
+    height: 1980px;
+    left: -1px;
+    position: relative;
+    width: 1441px;
+  }
+  
+  .applicant-home-page .rectangle {
+    background-color: #07a3fb1a;
+    height: 1735px;
+    left: 1px;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .applicant-home-page .div {
+    color: #000000;
+    font-family: "Quicksand-Bold", Helvetica;
+    font-size: 48px;
+    font-weight: 700;
+    left: 544px;
+    letter-spacing: 0;
+    line-height: 70px;
+    position: absolute;
+    top: 153px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .home-title-card {
+    height: 419px;
+    left: 136px;
+    position: absolute;
+    top: 243px;
+    width: 1172px;
+  }
+  
+  .applicant-home-page .overlap-group {
+    background-image: url(./rectangle-69.svg);
+    background-size: 100% 100%;
+    height: 427px;
+    left: -4px;
+    position: relative;
+    width: 1178px;
+  }
+  
+  .applicant-home-page .image {
+    height: 340px;
+    left: 64px;
+    object-fit: cover;
+    position: absolute;
+    top: 40px;
+    width: 488px;
+  }
+  
+  .applicant-home-page .p {
+    color: #000000;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    height: 140px;
+    left: 604px;
+    letter-spacing: 0;
+    line-height: 70px;
+    position: absolute;
+    top: 93px;
+    width: 492px;
+  }
+  
+  .applicant-home-page .group {
+    height: 65px;
+    left: 804px;
+    position: absolute;
+    top: 244px;
+    width: 131px;
+  }
+  
+  .applicant-home-page .overlap-group-2 {
+    height: 65px;
+    position: relative;
+    width: 129px;
+  }
+  
+  .applicant-home-page .rectangle-2 {
+    background-color: #000000;
+    height: 29px;
+    left: 0;
+    position: absolute;
+    top: 21px;
+    width: 129px;
+  }
+  
+  .applicant-home-page .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 23px;
+    letter-spacing: 0;
+    line-height: 70px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 92px;
+  }
+  
+  .applicant-home-page .text-wrapper-3 {
+    color: #1b8bf2;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 629px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 754px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .newly-added {
+    height: 922px;
+    left: 93px;
+    position: absolute;
+    top: 781px;
+    width: 1223px;
+  }
+  
+  .applicant-home-page .overlap-2 {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 227px;
+    left: 535px;
+    position: relative;
+    top: 27px;
+    width: 678px;
+  }
+  
+  .applicant-home-page .text-wrapper-4 {
+    color: #0060c0;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 19px;
+    font-weight: 700;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 132px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .overlap-group-3 {
+    height: 44px;
+    left: 32px;
+    position: absolute;
+    top: 169px;
+    width: 451px;
+  }
+  
+  .applicant-home-page .location-university {
+    color: #e92d21;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 19px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 0;
+  }
+  
+  .applicant-home-page .location-university-2 {
+    color: #555555;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 19px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 0;
+  }
+  
+  .applicant-home-page .text-wrapper-5 {
+    color: #2859d7;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 545px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 183px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .STEM-excellence {
+    color: #000000;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 20px;
+    width: 627px;
+  }
+  
+  .applicant-home-page .span {
+    font-weight: 700;
+  }
+  
+  .applicant-home-page .text-wrapper-6 {
+    font-size: 19px;
+    font-weight: 700;
+  }
+  
+  .applicant-home-page .text-wrapper-7 {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  
+  .applicant-home-page .overlap-group-wrapper {
+    height: 922px;
+    left: 93px;
+    position: absolute;
+    top: 1058px;
+    width: 1221px;
+  }
+  
+  .applicant-home-page .location-university-3 {
+    color: #555555;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 19px;
+    font-weight: 700;
+    left: 33px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 166px;
+  }
+  
+  .applicant-home-page .text-wrapper-8 {
+    color: #0060c0;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 19px;
+    font-weight: 700;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 129px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .STEM-excellence-2 {
+    color: #000000;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 17px;
+    width: 627px;
+  }
+  
+  .applicant-home-page .latest-updates {
+    box-shadow: 0px 4px 4px #00000040;
+    height: 756px;
+    left: 136px;
+    position: absolute;
+    top: 755px;
+    width: 468px;
+  }
+  
+  .applicant-home-page .overlap-3 {
+    height: 756px;
+    position: relative;
+    width: 470px;
+  }
+  
+  .applicant-home-page .line {
+    height: 1px;
+    left: 43px;
+    object-fit: cover;
+    position: absolute;
+    top: 137px;
+    width: 209px;
+  }
+  
+  .applicant-home-page .updates {
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 756px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 468px;
+  }
+  
+  .applicant-home-page .update-card {
+    height: 166px;
+    left: 22px;
+    position: relative;
+    top: 91px;
+    width: 428px;
+  }
+  
+  .applicant-home-page .overlap-group-4 {
+    background-image: url(./rectangle-74.svg);
+    background-size: 100% 100%;
+    height: 174px;
+    left: -4px;
+    position: relative;
+    width: 432px;
+  }
+  
+  .applicant-home-page .text-wrapper-9 {
+    color: #ffffff;
+    font-family: "Roboto-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    left: 26px;
+    letter-spacing: 0.1px;
+    line-height: 21px;
+    position: absolute;
+    text-align: justify;
+    top: 61px;
+    width: 383px;
+  }
+  
+  .applicant-home-page .text-wrapper-10 {
+    color: #ffffff;
+    font-family: "Roboto-Medium", Helvetica;
+    font-size: 30px;
+    font-weight: 500;
+    left: 26px;
+    letter-spacing: 0.1px;
+    line-height: 21px;
+    position: absolute;
+    text-shadow: 0px 0.5px 1px #00000040;
+    top: 19px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .div-wrapper {
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 470px;
+  }
+  
+  .applicant-home-page .overlap-4 {
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #000000;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 77px;
+    left: -1px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .applicant-home-page .text-wrapper-11 {
+    color: #000000;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 30px;
+    font-weight: 700;
+    left: 64px;
+    letter-spacing: 0.1px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    top: 26px;
+  }
+  
+  .applicant-home-page .MEGAPHONE-PNG {
+    height: 50px;
+    left: 17px;
+    position: absolute;
+    top: 13px;
+    width: 39px;
+  }
+  
+  .applicant-home-page .newly-added-2 {
+    height: 227px;
+    left: 628px;
+    position: absolute;
+    top: 1362px;
+    width: 686px;
+  }
+  
+  .applicant-home-page .overlap-5 {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #00000040;
+    height: 227px;
+    position: relative;
+    width: 678px;
+  }
+  
+  .applicant-home-page .location-university-4 {
+    color: #555555;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 19px;
+    font-weight: 700;
+    left: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 159px;
+  }
+  
+  .applicant-home-page .text-wrapper-12 {
+    color: #0060c0dd;
+    font-family: "Roboto-Bold", Helvetica;
+    font-size: 19px;
+    font-weight: 700;
+    left: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 122px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .text-wrapper-13 {
+    color: #2859d7;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 539px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 180px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .STEM-excellence-3 {
+    color: #000000;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 23px;
+    font-weight: 700;
+    left: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: justify;
+    top: 14px;
+    width: 627px;
+  }
+  
+  .applicant-home-page .text-wrapper-14 {
+    color: #000000;
+    font-family: "Inter-Bold", Helvetica;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  
+  .applicant-home-page .text-wrapper-15 {
+    font-size: 18px;
+  }
+  
+  .applicant-home-page .nav-bar-instance {
+    left: 1px !important;
+    position: absolute !important;
+    top: 0 !important;
+  }
+  
+  .applicant-home-page .design-component-instance-node {
+    left: 2546px !important;
+    width: unset !important;
+  }
+  
+  .applicant-home-page .nav-bar-2 {
+    height: 30px !important;
+    left: 10324px !important;
+    top: 2160px !important;
+    width: 90px !important;
+  }
+  
+  .applicant-home-page .nav-bar-3 {
+    left: 10231px !important;
+    top: 2152px !important;
+  }
+  
+  .applicant-home-page .nav-bar-4 {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 1440px;
+  }
+  
+  .applicant-home-page .overlap-6 {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    height: 64px;
+    left: -2px;
+    position: relative;
+    top: -2px;
+    width: 1444px;
+  }
+  
+  .applicant-home-page .text-wrapper-16 {
+    color: #00446c;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 229px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .text-wrapper-17 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 628px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .text-wrapper-18 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 774px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .text-wrapper-19 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 961px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .scholarlylogocropped {
+    height: 50px;
+    left: 161px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 50px;
+  }
+  
+  .applicant-home-page .text-wrapper-20 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 543px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .applicant-home-page .img {
+    height: 38px;
+    left: 1187px;
+    position: absolute;
+    top: 16px;
+    width: 98px;
+  }
+  
+  .applicant-home-page .PROFILE-ICON-2 {
+    height: 45px;
+    left: 1098px;
+    position: absolute;
+    top: 8px;
+    width: 64px;
+  }
+  

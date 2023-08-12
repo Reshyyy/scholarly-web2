@@ -1,15 +1,367 @@
-.sc-container {
-    display: grid;
-    gap: 10px;
-    align-items: center;
-    justify-items: center;
-    height: 100vh;
-}
+.applicant {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
   
-  .box {
-    border: 1px solid #ccc;
-    margin: 5px;
-    padding: 10px;
+  .applicant .overlap-wrapper {
+    background-color: #ffffff;
+    border: 1px none;
+    height: 1024px;
+    width: 1440px;
+  }
+  
+  .applicant .overlap-2 {
+    height: 1025px;
+    position: relative;
+    top: -1px;
+  }
+  
+  .applicant .div-2 {
+    background-color: #07a3fb1a;
+    height: 1024px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 1440px;
+  }
+  
+  .applicant .filter-sidebar-instance {
+    left: 45px !important;
+    position: absolute !important;
+    top: 185px !important;
+  }
+  
+  .applicant .scholarship-component {
+    left: 350px !important;
+    position: absolute !important;
+    top: 190px !important;
+  }
+  
+  .applicant .overlap-group-wrapper {
+    box-shadow: 0px 4px 4px #00000066;
+    height: 233px;
+    left: 349px;
+    position: absolute;
+    top: 463px;
+    width: 942px;
+  }
+  
+  .applicant .overlap-3 {
+    background-image: url(./image.svg);
+    background-size: 100% 100%;
+    height: 241px;
+    left: -4px;
+    position: relative;
+    width: 938px;
+  }
+  
+  .applicant .text-wrapper-10 {
+    -webkit-text-stroke: 1px #000aff;
+    color: #ffffff;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 18px;
+    font-weight: 800;
+    left: 41px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant .design-component-instance-node {
+    left: 764px !important;
+    position: absolute !important;
+    top: 101px !important;
+  }
+  
+  .applicant .text-wrapper-11 {
+    color: #0b0895;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 30px;
+    font-weight: 800;
+    left: 765px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 47px;
+    white-space: nowrap;
+  }
+  
+  .applicant .text-wrapper-12 {
+    -webkit-text-stroke: 1px #000000;
+    color: #0060c0;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 41px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 52px;
+    white-space: nowrap;
+  }
+  
+  .applicant .text-wrapper-13 {
+    -webkit-text-stroke: 1px #000000;
+    color: #ffffff;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 467px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 52px;
+    white-space: nowrap;
+  }
+  
+  .applicant .to-be-eligible-for-2 {
+    -webkit-text-stroke: 1px #000000;
+    color: #ffffff;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 43px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 115px;
+    width: 700px;
+  }
+  
+  .applicant .text-wrapper-14 {
+    -webkit-text-stroke: 1px #000000;
+    color: #ffffff;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 43px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 81px;
+    width: 374px;
+  }
+  
+  .applicant .div-wrapper {
+    box-shadow: 0px 4px 4px #00000066;
+    height: 233px;
+    left: 350px;
+    position: absolute;
+    top: 736px;
+    width: 942px;
+  }
+  
+  .applicant .overlap-4 {
+    background-image: url(./panelscholar-1-2.svg);
+    background-size: 100% 100%;
+    height: 241px;
+    left: -4px;
+    position: relative;
+    width: 938px;
+  }
+  
+  .applicant .search {
+    height: 40px;
+    left: 350px;
+    position: absolute;
+    top: 145px;
+    width: 525px;
+  }
+  
+  .applicant .text-wrapper-15 {
+    -webkit-text-stroke: 1px #000000;
+    color: #ffffff;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: -1px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
     text-align: center;
+    top: 11px;
+    white-space: nowrap;
+  }
+  
+  .applicant .search-bar {
+    height: 40px;
+    left: 269px;
+    position: absolute;
+    top: 0;
+    width: 256px;
+  }
+  
+  .applicant .overlap-group-3 {
+    background-color: #d0daff;
+    border-color: #000000;
+    border-radius: 14px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    height: 40px;
+    position: relative;
+    width: 254px;
+  }
+  
+  .applicant .text-wrapper-16 {
+    color: #000000;
+    font-family: "Roboto-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 11px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+    width: 154px;
+  }
+  
+  .applicant .search-interface {
+    height: 28px;
+    left: 212px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 28px;
+  }
+  
+  .applicant .recommended {
+    height: 38px;
+    left: 360px;
+    position: absolute;
+    top: 99px;
+    width: 332px;
+  }
+  
+  .applicant .text-wrapper-17 {
+    color: #000000;
+    font-family: "Roboto Flex-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .applicant .nav-bar {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .applicant .overlap-5 {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #000000;
+    height: 64px;
+    left: -2px;
+    position: relative;
+    top: -2px;
+    width: 1444px;
+  }
+  
+  .applicant .text-wrapper-18 {
+    color: #00446c;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    left: 229px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant .text-wrapper-19 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 628px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .applicant .text-wrapper-20 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 774px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant .text-wrapper-21 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 961px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    white-space: nowrap;
+  }
+  
+  .applicant .scholarlylogocropped {
+    height: 50px;
+    left: 161px;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    width: 50px;
+  }
+  
+  .applicant .text-wrapper-22 {
+    color: #00456c;
+    font-family: "Roboto Flex-ExtraBold", Helvetica;
+    font-size: 16px;
+    font-weight: 800;
+    left: 543px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    white-space: nowrap;
+  }
+  
+  .applicant .log-out-button {
+    height: 38px;
+    left: 1187px;
+    position: absolute;
+    top: 16px;
+    width: 98px;
+  }
+  
+  .applicant .PROFILE-ICON {
+    height: 45px;
+    left: 1098px;
+    position: absolute;
+    top: 8px;
+    width: 64px;
   }
   
