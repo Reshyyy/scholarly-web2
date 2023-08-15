@@ -1,12 +1,9 @@
 import React from 'react'
 import './Scholarships.css'
-import Navbar from '../../components/header/Navbar'
-import Footer from '../../components/footer/Footer'
 
 function Scholarships() {
   return (
     <div>
-        <Navbar />
         <div className="sc-container">
             <div className="row">
                 <div className="box">
@@ -17,7 +14,6 @@ function Scholarships() {
                 </div>
             </div>
         </div>
-        <Footer />
     </div>
   )
 }

@@ -1,12 +1,10 @@
 import React from 'react';
 import './Login.css';
 import scholarlyLogo from '../../assets/scholarly-logo.png';
-import Navbar from '../../components/header/Navbar';
 
 function Login() {
   return (
     <div>
-      <Navbar />
       <div className="login-page">
       <div className="logo-login-container">
         <img className="logo" src={scholarlyLogo} alt="Scholarly Logo" />
