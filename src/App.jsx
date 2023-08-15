@@ -12,6 +12,7 @@ import Navbar2 from './components/header/Navbar2';
 import Navbar3 from './components/header/Navbar3';
 import SignUp2 from './pages/SignUp/SignUp2';
 import Login2 from './pages/Login/Login2';
+import GrantorRegister from './pages/Grantor/GrantorRegister';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login2 />} />
         <Route path="/scholarships" element={<Scholarships />} />
         <Route path="/about" element={<About />} />
+        <Route path="/grantor-register" element={<GrantorRegister />} />
       </Routes>
       <Footer />
     </Router>
