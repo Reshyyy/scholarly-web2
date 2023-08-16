@@ -4,6 +4,7 @@ import { Grid } from '@mui/material';
 import fbIcon from './../../assets/fb_icon.png'
 import pIcon from './../../assets/p-icon.png'
 import { Container, Box, Typography } from '@mui/material';
+import aboutImage from './../../assets/aboutimage.png'
 
 
 function About() {
@@ -20,6 +21,7 @@ function About() {
            height: '300px', padding: 10, 
            background: 'linear-gradient(180deg, rgba(19, 64, 133, 0.72) 52.60%, rgba(19, 64, 133, 0.22) 100%)'
       }}>
+        <img src={aboutImage} alt="about-image" style={{ width: '300', height: '250px', position: 'absolute', marginLeft: '700px' }}/>
         <Typography fontSize={30} fontWeight="bold" color='white'>
           About Us
         </Typography>
