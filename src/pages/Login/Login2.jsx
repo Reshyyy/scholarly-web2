@@ -24,7 +24,6 @@ function Login2() {
           Don't have an account yet? <Link to="/signup">Sign Up</Link>
         </Typography>
         </form>
-
         </Paper>
     </Grid>
   )
