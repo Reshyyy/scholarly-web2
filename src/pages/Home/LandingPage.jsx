@@ -1,14 +1,17 @@
 import React from 'react'
 import { Box, Container, Typography, Grid, Button } from '@mui/material'
+import studentImage from './../../assets/student.png'
 
 function LandingPage() {
   return (
     <Box height="100vh" sx={{ background: "#2364A4", display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
         <Container>
             <Box marginTop='100px'>
+            <img src={studentImage} alt="student-image" style={{ top: '125px', width: 'auto', height: '600px', position: 'absolute', marginLeft: '650px' }} />
             <Typography sx={{ fontSize: '60px', fontFamily: 'Roboto Flex', fontWeight: 'bold', color: 'white' }}>
                 Conveniently Finds <br />Scholarships For You
             </Typography>
+            
             <Typography textAlign='justify' sx={{color: 'white', fontSize: '20px', fontFamily: 'Roboto Flex', fontWeight: '500'}}>
                 Scholar.ly is an innovative app built to streamline the search<br />
                 and application process. You can access a world of scholarship<br />
