@@ -1,8 +1,16 @@
 import React from 'react'
 import { Box, Container, Typography, Grid, Button } from '@mui/material'
 import studentImage from './../../assets/student.png'
+import { useNavigate } from 'react-router-dom';
 
 function LandingPage() {
+  const navigate = useNavigate();
+
+  const navgiateToLogin = () => {
+    // 👇️ navigate to /login
+    navigate('/login');
+  };
+  
   return (
     <Box height="100vh" sx={{ background: "#2364A4", display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
         <Container>
@@ -22,6 +30,7 @@ function LandingPage() {
             <Button
               variant="contained"
               color="primary"
+              onClick={navgiateToLogin}
               className="find-scholarships-button"
               sx={{ marginTop: '20px', background: '#0DA8FF', fontWeight: 'bold' }}
             >

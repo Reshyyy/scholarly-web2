@@ -13,7 +13,6 @@ function About() {
       sx={{
         height: '100vh',
       }}
-    
     >
       <Box marginTop='36px' 
            borderRadius={15}
@@ -21,7 +20,9 @@ function About() {
            height: '300px', padding: 10, 
            background: 'linear-gradient(180deg, rgba(19, 64, 133, 0.72) 52.60%, rgba(19, 64, 133, 0.22) 100%)'
       }}>
+        <Box>
         <img src={aboutImage} alt="about-image" style={{ width: '300', height: '250px', position: 'absolute', marginLeft: '700px' }}/>
+        </Box>
         <Typography fontSize={30} fontWeight="bold" color='white'>
           About Us
         </Typography>

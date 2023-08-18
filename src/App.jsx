@@ -14,8 +14,12 @@ import SignUp2 from './pages/SignUp/SignUp2';
 import Login2 from './pages/Login/Login2';
 import GrantorRegister from './pages/Grantor/GrantorRegister';
 import LoginAdmin from './admin/AdminLogin/LoginAdmin';
+import About2 from './pages/About/About2';
+import Axios from 'axios'
+import ApplicantHome from './pages/Applicant/ApplicantHome';
 
 function App() {
+
   return (
     <div>
     <Router>
@@ -28,6 +32,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/grantor-register" element={<GrantorRegister />} />
         <Route path="/admin-login" element={<LoginAdmin />} />
+        <Route path="/applicant-home" element={<ApplicantHome />} />
       </Routes>
       <Footer />
     </Router>
