@@ -1,9 +1,11 @@
 import React from 'react'
 import './Scholarships.css'
+import Navbar3 from '../../components/header/Navbar3'
 
 function Scholarships() {
   return (
     <div>
+        <Navbar3 />
         <div className="sc-container">
             <div className="row">
                 <div className="box">

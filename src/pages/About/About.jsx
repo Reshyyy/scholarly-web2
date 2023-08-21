@@ -5,10 +5,13 @@ import fbIcon from './../../assets/fb_icon.png'
 import pIcon from './../../assets/p-icon.png'
 import { Container, Box, Typography } from '@mui/material';
 import aboutImage from './../../assets/aboutimage.png'
+import Navbar3 from '../../components/header/Navbar3';
 
 
 function About() {
   return (
+    <div>
+    <Navbar3 />
     <Container
       sx={{
         height: '100vh',
@@ -40,6 +43,8 @@ function About() {
         
       </Box>
     </Container>
+    </div>
+    
   )
 }
 

@@ -17,13 +17,16 @@ import LoginAdmin from './admin/AdminLogin/LoginAdmin';
 import About2 from './pages/About/About2';
 import Axios from 'axios'
 import ApplicantHome from './pages/Applicant/ApplicantHome';
+import ApplicantRecommendations from './pages/Applicant/ApplicantRecommendations';
+import ApplicantScholarships from './pages/Applicant/ApplicantScholarships';
+import ApplicantAbout from './pages/Applicant/ApplicantAbout';
+import GrantorHome from './pages/Grantor/GrantorHome';
 
 function App() {
 
   return (
     <div>
     <Router>
-      <Navbar3 />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp2 />} />
@@ -33,6 +36,10 @@ function App() {
         <Route path="/grantor-register" element={<GrantorRegister />} />
         <Route path="/admin-login" element={<LoginAdmin />} />
         <Route path="/applicant-home" element={<ApplicantHome />} />
+        <Route path="/recommendations" element={<ApplicantRecommendations />} />
+        <Route path="/applicant-scholarships" element={<ApplicantScholarships />} />
+        <Route path="/applicant-about" element={<ApplicantAbout />} />
+        <Route path="/grantor-home" element={<GrantorHome />} />
       </Routes>
       <Footer />
     </Router>

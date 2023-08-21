@@ -3,9 +3,12 @@ import React from 'react'
 import aboutImage from './../../assets/aboutimage.png'
 import fbIcon from './../../assets/fb_icon.png'
 import pIcon from './../../assets/p-icon.png'
+import Navbar3 from '../../components/header/Navbar3'
 
 function About2() {
   return (
+    <>
+    <Navbar3 />
     <Container sx={{ display: 'flex', alignItems: 'center', height: 'auto', justifyContent: 'center' }}>
         <Box marginTop='36px' 
            borderRadius={15}
@@ -31,6 +34,8 @@ function About2() {
         </Box>
         
     </Container>
+    </>
+    
   )
 }
 

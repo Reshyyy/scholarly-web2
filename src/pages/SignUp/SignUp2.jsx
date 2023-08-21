@@ -3,6 +3,7 @@ import { Button, Checkbox, FormControlLabel, Typography } from '@mui/material';
 import { Grid, Paper, TextField } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios'
+import Navbar3 from '../../components/header/Navbar3';
 
 function SignUp2() {
     const [values, setValues] = useState({
@@ -32,6 +33,7 @@ function SignUp2() {
 
   return (
     <Grid>
+        <Navbar3 />
         <Paper elevation={10} style={{padding: '30px 20px', width: '470px', margin: '20px auto'}}>
             <h2>Sign Up</h2>
         <form onSubmit={handleSubmit}>
