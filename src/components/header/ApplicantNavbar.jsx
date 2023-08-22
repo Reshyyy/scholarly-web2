@@ -1,9 +1,15 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography, Tabs, Tab, Button, IconButton, Menu, MenuItem } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import sLogo from './logo.png';
 
 const ApplicantNavbar = () => {
+
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+    navigate('/login');
+  };
 
   return (
     <AppBar position="static" sx={{ background: "#D9D9D9" }}>
@@ -29,7 +35,7 @@ const ApplicantNavbar = () => {
             <Tab label="Recommendations" component={RouterLink} to="/recommendations" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#00456C'  }} />
             <Tab label="About" component={RouterLink} to="/applicant-about" sx={{ textTransform: 'none', fontWeight: 'bold', color: '#00456C'  }} />
         </Tabs>
-        <Button component={RouterLink} to="/login" sx={{ textTransform: 'none', color: '#00456C', fontWeight: 'bold' }}>Logout</Button>
+        <Button onClick={handleLogout} sx={{ textTransform: 'none', color: '#00456C', fontWeight: 'bold' }}>Logout</Button>
         </Toolbar>
     </AppBar>
   )

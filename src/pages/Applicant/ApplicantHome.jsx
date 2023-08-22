@@ -12,7 +12,7 @@ const ApplicantHome = () => {
           <h1>Welcome User! </h1>
         </Box>
         <Grid lg={12} container spacing={2}>
-          <Grid lg={12} style={{backgroundColor: 'aqua'}}>
+          <Grid lg={12} >
             <h1>Block 1</h1>
           </Grid>
           <Grid lg={3}>

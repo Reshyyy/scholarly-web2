@@ -5,8 +5,8 @@ import GrantorSidebar from '../../components/sidebar/GrantorSidebar'
 const GrantorHome = () => {
   return (
     <div>
-        <GrantorNavbar />
         <GrantorSidebar />
+        <GrantorNavbar />
     </div>
   )
 }
