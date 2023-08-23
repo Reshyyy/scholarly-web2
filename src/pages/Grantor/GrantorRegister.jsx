@@ -1,18 +1,76 @@
 import { Box, Button, Container, FormGroup, Grid, TextField, Typography } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react';
 import Navbar3 from '../../components/header/Navbar3';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Stack from "@mui/material/Stack";
+import axios from 'axios';
 
 function GrantorRegister() {
-  const [age, setAge] = React.useState('');
+  const [formData, setFormData] = useState({
+    organization_name: '',
+    contact_name: '',
+    contact_email: '',
+    phone_number: '',
+    organization_type: '',
+    mission_statement: '',
+    logo_image : '',
+    website_url: '',
+    address: '',
+    username: '',
+    password: ''
+  });
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:8081/grantor-register', formData);
+      console.log(response.data);
+      setFormData({
+        organization_name: '',
+        contact_name: '',
+        contact_email: '',
+        phone_number: '',
+        organization_type: '',
+        mission_statement: '',
+        logo_image: '',
+        website_url: '',
+        address: '',
+        username: '',
+        password: '',
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
+
+  const [organizationType, setOrganizationType] = useState('');
+
+  const handleOrganizationTypeChange = (event) => {
+    setOrganizationType(event.target.value);
+  };
+
+  const [filePreview, setFilePreview] = useState(null);
+
+  const handleFileChange = (files) => {
+    if (files && files.length > 0) {
+      const selectedFile = files[0];
+      setFormData({
+        ...formData,
+        logo_image: selectedFile, // Store the file object in the form data
+      });
+  
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setFilePreview(e.target.result); // Set the preview URL for display
+      };
+      reader.readAsDataURL(selectedFile);
+    }
+  };
+
   return (
     <Grid>
       <Navbar3 />
@@ -52,17 +110,19 @@ function GrantorRegister() {
                 />
                 <Box sx={{ minWidth: 120 }}>
                 <FormControl fullWidth style={{ marginBottom: '20px' }}>
-                <InputLabel id="demo-simple-select-label">Organization Type</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={age}
-                  label="Age"
-                  onChange={handleChange}
-                >
-                  <MenuItem value={10}>Individual</MenuItem>
-                  <MenuItem value={20}>Institution</MenuItem>
-                </Select>
+                  <InputLabel id="organization-type-label">
+                    Organization Type
+                  </InputLabel>
+                  <Select
+                    labelId="organization-type-label"
+                    id="organization-type"
+                    value={organizationType}
+                    label="Organization Type"
+                    onChange={handleOrganizationTypeChange}
+                  >
+                    <MenuItem value="Individual">Individual</MenuItem>
+                    <MenuItem value="Institution">Institution</MenuItem>
+                  </Select>
                 </FormControl>
                 </Box>
                 <TextField
@@ -77,8 +137,11 @@ function GrantorRegister() {
                   <Typography sx={{ fontStyle: 'italic', color: 'gray' }}>Logo of Organization</Typography>
                   <Button variant="contained" component="label">
                     Select File
-                    <input hidden accept="image/*" multiple type="file" />
+                    <input hidden accept="image/*" type="file" onChange={(event) => handleFileChange(event.target.files)} />
                   </Button>
+                  {filePreview && (
+                    <img src={filePreview} alt="Selected Logo" style={{ maxWidth: '100px' }} />
+                  )}
                 </Stack>
                 <TextField
                 label="Website URL"
@@ -103,19 +166,13 @@ function GrantorRegister() {
                 />
                 <TextField
                 label="Password"
-                multiline
+                id="outlined-password-input"
+                type="password"
                 variant="outlined"
                 fullWidth
                 style={{ marginBottom: '20px' }}
                 />
-                <TextField
-                label="Confirm Password"
-                multiline
-                variant="outlined"
-                fullWidth
-                style={{ marginBottom: '20px' }}
-                />
-                <Button type='submit' variant='contained' style={{ margin: '30px auto', width: '400px', marginBottom: '100px' }}>Submit</Button>
+                <Button onClick={handleSubmit} type='submit' variant='contained' style={{ margin: '30px auto', width: '400px', marginBottom: '100px' }}>Submit</Button>
                 </FormGroup>
                 </Box>
             </Grid>

@@ -51,7 +51,7 @@ function SignUp2() {
                 Already have an account? <Link to="/login">Login</Link>
             </Typography>
             <Typography style={{ fontWeight:'bold', textAlign: 'center', marginTop: '30px' }}>
-                ARE YOU A GRANTOR? <Link to="/grantor-register">REGISTER HERE</Link>
+                ARE YOU A GRANTOR? <Link to="/grantor-register2">REGISTER HERE</Link>
             </Typography>
             </Grid>
         </form>

@@ -21,6 +21,13 @@ import ApplicantRecommendations from './pages/Applicant/ApplicantRecommendations
 import ApplicantScholarships from './pages/Applicant/ApplicantScholarships';
 import ApplicantAbout from './pages/Applicant/ApplicantAbout';
 import GrantorHome from './pages/Grantor/GrantorHome';
+import GrantorRegister2 from './pages/Grantor/GrantorRegister2';
+import AdminHome from './admin/AdminHome';
+import GrantorDashboard from './components/sidebar/GrantorComponents/dashboard/GrantorDashboard';
+import GrantorManageScholarship from './components/sidebar/GrantorComponents/manageScholarships/GrantorManageScholarship';
+import GrantorGenerateReport from './components/sidebar/GrantorComponents/generateReports/GrantorGenerateReport';
+import GrantorLogin from './pages/Grantor/GrantorLogin';
+
 
 function App() {
 
@@ -33,15 +40,21 @@ function App() {
         <Route path="/login" element={<Login2 />} />
         <Route path="/scholarships" element={<Scholarships />} />
         <Route path="/about" element={<About />} />
-        <Route path="/grantor-register" element={<GrantorRegister />} />
+        {/*<Route path="/grantor-register" element={<GrantorRegister />} />*/}
+        <Route path="/grantor-register2" element={<GrantorRegister2 />} />
         <Route path="/admin-login" element={<LoginAdmin />} />
         <Route path="/applicant-home" element={<ApplicantHome />} />
         <Route path="/recommendations" element={<ApplicantRecommendations />} />
         <Route path="/applicant-scholarships" element={<ApplicantScholarships />} />
         <Route path="/applicant-about" element={<ApplicantAbout />} />
-        <Route path="/grantor-home" element={<GrantorHome />} />
+        <Route path="/grantor_home" element={<GrantorHome />} />
+        <Route path="/admin-home" element={<AdminHome />} />
+        <Route path="/grantor_dashboard" element={<GrantorDashboard />} />
+        <Route path="/grantor_manage_scholarship" element={<GrantorManageScholarship />} />
+        <Route path="/grantor_generate_report" element={<GrantorGenerateReport />} />
+        <Route path="/grantor-login" element={<GrantorLogin />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
     </div>
   );
