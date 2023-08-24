@@ -27,6 +27,7 @@ import GrantorDashboard from './components/sidebar/GrantorComponents/dashboard/G
 import GrantorManageScholarship from './components/sidebar/GrantorComponents/manageScholarships/GrantorManageScholarship';
 import GrantorGenerateReport from './components/sidebar/GrantorComponents/generateReports/GrantorGenerateReport';
 import GrantorLogin from './pages/Grantor/GrantorLogin';
+import AddScholarship from './components/sidebar/GrantorComponents/manageScholarships/AddScholarship';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
         <Route path="/grantor_manage_scholarship" element={<GrantorManageScholarship />} />
         <Route path="/grantor_generate_report" element={<GrantorGenerateReport />} />
         <Route path="/grantor-login" element={<GrantorLogin />} />
+        <Route path="/add_scholarship" element={<AddScholarship />} />
       </Routes>
       {/* <Footer /> */}
     </Router>
