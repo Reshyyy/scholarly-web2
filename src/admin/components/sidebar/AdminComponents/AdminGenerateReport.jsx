@@ -1,8 +1,12 @@
 import React from 'react'
+import AdminNavbar2 from '../../header/AdminNavbar2'
 
 const AdminGenerateReport = () => {
   return (
-    <div>AdminGenerateReport</div>
+    <div>
+      <AdminNavbar2 />
+      AdminGenerateReport
+    </div>
   )
 }
 

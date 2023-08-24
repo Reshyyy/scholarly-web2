@@ -8,6 +8,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import DescriptionIcon from '@mui/icons-material/Description';
+import SchoolIcon from '@mui/icons-material/School';
 import { Link } from 'react-router-dom';
 
 export default function GrantorSidebar3({ state, setState, toggleDrawer }) {

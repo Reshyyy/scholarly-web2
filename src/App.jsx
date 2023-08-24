@@ -28,6 +28,9 @@ import GrantorManageScholarship from './components/sidebar/GrantorComponents/man
 import GrantorGenerateReport from './components/sidebar/GrantorComponents/generateReports/GrantorGenerateReport';
 import GrantorLogin from './pages/Grantor/GrantorLogin';
 import AddScholarship from './components/sidebar/GrantorComponents/manageScholarships/AddScholarship';
+import AdminDashboard from './admin/components/sidebar/AdminComponents/AdminDashboard';
+import AdminUserManagement from './admin/components/sidebar/AdminComponents/AdminUserManagement';
+import AdminGenerateReport from './admin/components/sidebar/AdminComponents/AdminGenerateReport';
 
 
 function App() {
@@ -58,6 +61,9 @@ function App() {
         {/* Admin Side */}
         <Route path="/admin-login" element={<LoginAdmin />} />
         <Route path="/admin-home" element={<AdminHome />} />
+        <Route path="/admin_dashboard" element={<AdminDashboard />} />
+        <Route path="/admin_user_management" element={<AdminUserManagement />} />
+        <Route path="/admin_generate_report" element={<AdminGenerateReport />} />
       </Routes>
       {/* <Footer /> */}
     </Router>
