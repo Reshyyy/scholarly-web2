@@ -36,25 +36,28 @@ function App() {
     <div>
     <Router>
       <Routes>
+        {/* Guest Side */}
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp2 />} />
         <Route path="/login" element={<Login2 />} />
         <Route path="/scholarships" element={<Scholarships />} />
         <Route path="/about" element={<About />} />
-        {/*<Route path="/grantor-register" element={<GrantorRegister />} />*/}
-        <Route path="/grantor-register2" element={<GrantorRegister2 />} />
-        <Route path="/admin-login" element={<LoginAdmin />} />
+        {/* Applicant Side */}
         <Route path="/applicant-home" element={<ApplicantHome />} />
         <Route path="/recommendations" element={<ApplicantRecommendations />} />
         <Route path="/applicant-scholarships" element={<ApplicantScholarships />} />
         <Route path="/applicant-about" element={<ApplicantAbout />} />
+        {/* Grantor Side */}
         <Route path="/grantor_home" element={<GrantorHome />} />
-        <Route path="/admin-home" element={<AdminHome />} />
+        <Route path="/grantor-register2" element={<GrantorRegister2 />} />
         <Route path="/grantor_dashboard" element={<GrantorDashboard />} />
         <Route path="/grantor_manage_scholarship" element={<GrantorManageScholarship />} />
         <Route path="/grantor_generate_report" element={<GrantorGenerateReport />} />
         <Route path="/grantor-login" element={<GrantorLogin />} />
         <Route path="/add_scholarship" element={<AddScholarship />} />
+        {/* Admin Side */}
+        <Route path="/admin-login" element={<LoginAdmin />} />
+        <Route path="/admin-home" element={<AdminHome />} />
       </Routes>
       {/* <Footer /> */}
     </Router>

@@ -2,16 +2,12 @@ import { Box, Container } from '@mui/material'
 import React from 'react'
 import AdminNavbar from './components/header/AdminNavbar'
 import AdminSidebar from './components/sidebar/AdminSidebar'
+import AdminNavbar2 from './components/header/AdminNavbar2'
 
 const AdminHome = () => {
   return (
     <div>
-        <AdminSidebar />
-    <Container>
-        <Box sx={{height: '100vh'}}>
-
-        </Box>
-    </Container>
+      <AdminNavbar2 />
     </div>
   )
 }
