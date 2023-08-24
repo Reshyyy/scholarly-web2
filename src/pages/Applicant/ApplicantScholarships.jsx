@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link
 import { Paper, Typography, Button, Container, Box } from '@mui/material';
 import axios from 'axios';
-import ApplicantNavbar from './../../components/header/ApplicantNavbar'
-
+import ApplicantNavbar from './../../components/header/ApplicantNavbar';
 
 const ApplicantScholarships = () => {
   const [scholarships, setScholarships] = useState([]);
@@ -41,6 +40,7 @@ const ApplicantScholarships = () => {
                 Amount: {scholarship.amount}
               </Typography>
               <Box display="flex" justifyContent="center" marginTop="10px">
+                {/* Use Link to navigate to the ViewDetails page */}
                 <Button
                   variant="outlined"
                   color="primary"

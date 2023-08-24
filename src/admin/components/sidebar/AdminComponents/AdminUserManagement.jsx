@@ -72,6 +72,25 @@ const AdminUserManagement = () => {
     setSelectedUser(null);
   };
 
+  const handleDeleteClick = (userId) => {
+    const confirmDelete = window.confirm('Are you sure you want to delete this user?');
+  
+    if (confirmDelete) {
+      axios.delete(`http://localhost:8081/api/users/${userId}`)
+        .then(() => {
+          // Handle success
+          console.log('User deleted successfully');
+          // Remove the deleted user from the tableData state
+          setTableData((prevTableData) => prevTableData.filter((user) => user.id !== userId));
+        })
+        .catch((error) => {
+          // Handle error
+          console.error('Error deleting user:', error);
+        });
+    }
+  };
+  
+
   return (
     <div>
       <AdminNavbar2 />
@@ -121,7 +140,7 @@ const AdminUserManagement = () => {
                     >
                       Edit
                     </Button>
-                    <Button variant="outlined" size="small" color="error">
+                    <Button variant="outlined" size="small" color="error" onClick={() => handleDeleteClick(row.id)}>
                       Delete
                     </Button>
                     </TableCell>

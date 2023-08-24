@@ -24,6 +24,10 @@ export default function AdminNavbar2() {
     
         setState({ ...state, [anchor]: open });
       };
+
+      const handleLogout = () => {
+        navigate('/login'); 
+      };
     return (
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
@@ -41,7 +45,7 @@ export default function AdminNavbar2() {
             <Typography variant="h6" color="#000" component="div" sx={{ flexGrow: 1, textAlign: 'center' }}>
               Admin Panel
             </Typography>
-            <Button variant="text" sx={{color:'#000'}}>Logout</Button>
+            <Button onClick={handleLogout} variant="text" sx={{color:'#000'}} >Logout</Button>
           </Toolbar>
         </AppBar>
         <AdminSidebar2 state={state} setState={setState} toggleDrawer={toggleDrawer} />

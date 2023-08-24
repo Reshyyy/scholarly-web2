@@ -31,13 +31,15 @@ import AddScholarship from './components/sidebar/GrantorComponents/manageScholar
 import AdminDashboard from './admin/components/sidebar/AdminComponents/AdminDashboard';
 import AdminUserManagement from './admin/components/sidebar/AdminComponents/AdminUserManagement';
 import AdminGenerateReport from './admin/components/sidebar/AdminComponents/AdminGenerateReport';
+import ViewDetails from './pages/Applicant/ViewDetails';
 
 
 function App() {
 
   return (
-    <div>
     <Router>
+    <div>
+    
       <Routes>
         {/* Guest Side */}
         <Route path="/" element={<Home />} />
@@ -50,6 +52,7 @@ function App() {
         <Route path="/recommendations" element={<ApplicantRecommendations />} />
         <Route path="/applicant-scholarships" element={<ApplicantScholarships />} />
         <Route path="/applicant-about" element={<ApplicantAbout />} />
+        <Route exact path="/scholarship/:id" component={ViewDetails} />
         {/* Grantor Side */}
         <Route path="/grantor_home" element={<GrantorHome />} />
         <Route path="/grantor-register2" element={<GrantorRegister2 />} />
@@ -66,8 +69,9 @@ function App() {
         <Route path="/admin_generate_report" element={<AdminGenerateReport />} />
       </Routes>
       {/* <Footer /> */}
-    </Router>
+    
     </div>
+    </Router>
   );
 }
 
