@@ -15,10 +15,12 @@ import {
 } from '@mui/material';
 import axios from 'axios';
 import EditUserDialog from './EditUserDialog';
+import EditProviderDialog from './EditProviderDialog';
 
 const AdminUserManagement = () => {
   const [selectedRole, setSelectedRole] = useState('applicants');
   const [tableData, setTableData] = useState([]);
+  
 
   useEffect(() => {
     fetchData(selectedRole);
@@ -89,6 +91,24 @@ const AdminUserManagement = () => {
         });
     }
   };
+
+  const [editProviderDialogOpen, setEditProviderDialogOpen] = useState(false);
+  const [selectedProvider, setSelectedProvider] = useState(null);
+
+  const handleEditProviderClick = (provider) => {
+    setSelectedProvider(provider);
+    setEditProviderDialogOpen(true);
+  };
+  
+  const handleEditProviderDialogClose = () => {
+    setEditProviderDialogOpen(false);
+    setSelectedProvider(null);
+  };
+
+  const handleProviderClick = (provider) => {
+    setSelectedProvider(provider);
+    setEditProviderDialogOpen(true);
+  };
   
 
   return (
@@ -116,39 +136,55 @@ const AdminUserManagement = () => {
           </Box>
 
           <TableContainer component={Paper}>
-            <Table>
-              <TableHead>
-                <TableRow>
-                  {columns.map((column) => (
-                    <TableCell key={column.field}>{column.headerName}</TableCell>
-                  ))}
-                  <TableCell>Actions</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {tableData.map((row) => (
-                  <TableRow key={row.id}>
-                    {columns.map((column) => (
-                      <TableCell key={column.field}>{row[column.field]}</TableCell>
-                    ))}
-                    <TableCell>
+        <Table>
+          <TableHead>
+            <TableRow>
+              {columns.map((column) => (
+                <TableCell key={column.field}>{column.headerName}</TableCell>
+              ))}
+              <TableCell>Actions</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {tableData.map((row) => (
+              <TableRow key={row.id}>
+                {columns.map((column) => (
+                  <TableCell key={column.field}>{row[column.field]}</TableCell>
+                ))}
+                <TableCell>
+                  {selectedRole === 'applicants' ? (
                     <Button
                       variant="outlined"
                       size="small"
                       style={{ marginRight: '5px' }}
-                      onClick={() => handleEditClick(row)} // Call handleEditClick with the user data
+                      onClick={() => handleEditClick(row)}
                     >
                       Edit
                     </Button>
-                    <Button variant="outlined" size="small" color="error" onClick={() => handleDeleteClick(row.id)}>
-                      Delete
+                  ) : (
+                    <Button
+                      variant="outlined"
+                      size="small"
+                      style={{ marginRight: '5px' }}
+                      onClick={() => handleProviderClick(row)}
+                    >
+                      Edit
                     </Button>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
+                  )}
+                  <Button
+                    variant="outlined"
+                    size="small"
+                    color="error"
+                    onClick={() => handleDeleteClick(row.id)}
+                  >
+                    Delete
+                  </Button>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
         </Box>
       </Container>
       {/* Edit User Dialog */}
@@ -157,6 +193,13 @@ const AdminUserManagement = () => {
           open={editDialogOpen}
           handleClose={handleEditDialogClose}
           user={selectedUser}
+        />
+      )}
+      {selectedProvider && (
+        <EditProviderDialog
+          open={editProviderDialogOpen}
+          handleClose={handleEditProviderDialogClose}
+          provider={selectedProvider}
         />
       )}
     </div>

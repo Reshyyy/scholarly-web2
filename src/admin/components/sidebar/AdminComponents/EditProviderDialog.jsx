@@ -3,7 +3,6 @@ import {
   Dialog,
   DialogActions,
   DialogContent,
-  DialogContentText,
   DialogTitle,
   Button,
   TextField,
@@ -12,31 +11,31 @@ import {
 import MuiAlert from '@mui/material/Alert';
 import axios from 'axios';
 
-const EditUserDialog = ({ open, handleClose, user }) => {
-  const [editedUser, setEditedUser] = useState(user);
+const EditProviderDialog = ({ open, handleClose, provider }) => {
+  const [editedProvider, setEditedProvider] = useState(provider);
   const [successSnackbarOpen, setSuccessSnackbarOpen] = useState(false); 
   const [errorSnackbarOpen, setErrorSnackbarOpen] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleFieldChange = (event) => {
     const { name, value } = event.target;
-    setEditedUser((prevUser) => ({
-      ...prevUser,
+    setEditedProvider((prevProvider) => ({
+      ...prevProvider,
       [name]: value,
     }));
   };
 
   const handleSave = () => {
-    axios.put(`http://localhost:8081/api/update-user/${editedUser.id}`, editedUser)
+    axios.put(`http://localhost:8081/api/update-user/${editedProvider.id}`, editedProvider)
       .then((response) => {
         setSuccessSnackbarOpen(true);
         handleClose();
-        window.location.reload();
+        window.location.reload(); // Refresh the page
       })
       .catch((error) => {
         console.error(error);
         setErrorSnackbarOpen(true);
-        setErrorMessage('Error updating user. Please try again.');
+        setErrorMessage('Error updating provider. Please try again.');
       });
   };
 
@@ -47,13 +46,21 @@ const EditUserDialog = ({ open, handleClose, user }) => {
 
   return (
     <Dialog open={open} onClose={handleClose}>
-      <DialogTitle>Edit User</DialogTitle>
+      <DialogTitle>Edit Provider</DialogTitle>
       <DialogContent>
-        {/* Place your input fields for editing user data here */}
+        {/* Place your input fields for editing provider data here */}
+        <TextField
+          name="organization_name"
+          label="Organization Name"
+          value={editedProvider.organization_name}
+          onChange={handleFieldChange}
+          fullWidth
+          margin="normal"
+        />
         <TextField
           name="firstname"
           label="First Name"
-          value={editedUser.firstname}
+          value={editedProvider.firstname}
           onChange={handleFieldChange}
           fullWidth
           margin="normal"
@@ -61,7 +68,7 @@ const EditUserDialog = ({ open, handleClose, user }) => {
         <TextField
           name="lastname"
           label="Last Name"
-          value={editedUser.lastname}
+          value={editedProvider.lastname}
           onChange={handleFieldChange}
           fullWidth
           margin="normal"
@@ -69,7 +76,7 @@ const EditUserDialog = ({ open, handleClose, user }) => {
         <TextField
           name="email"
           label="Email"
-          value={editedUser.email}
+          value={editedProvider.email}
           onChange={handleFieldChange}
           fullWidth
           margin="normal"
@@ -89,7 +96,7 @@ const EditUserDialog = ({ open, handleClose, user }) => {
         onClose={handleSnackbarClose}
       >
         <MuiAlert elevation={6} variant="filled" onClose={handleSnackbarClose} severity="success">
-          User updated successfully!
+          Provider updated successfully!
         </MuiAlert>
       </Snackbar>
 
@@ -107,4 +114,4 @@ const EditUserDialog = ({ open, handleClose, user }) => {
   );
 };
 
-export default EditUserDialog;
+export default EditProviderDialog;

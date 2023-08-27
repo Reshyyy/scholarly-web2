@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link
 import { Paper, Typography, Button, Container, Box } from '@mui/material';
 import axios from 'axios';
 import ApplicantNavbar from './../../components/header/ApplicantNavbar';
+import Searchbar from '../../components/searchbar/Searchbar';
 
 const ApplicantScholarships = () => {
   const [scholarships, setScholarships] = useState([]);
@@ -24,7 +25,9 @@ const ApplicantScholarships = () => {
     <div>
       <ApplicantNavbar />
       <Container>
+        
         <Box mt={4}>
+        <Searchbar />
           {scholarships.map((scholarship) => (
             <Paper key={scholarship.id} elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
               <Typography variant="h5" gutterBottom>
