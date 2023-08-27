@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import { Paper, Typography, Button, Container, Box } from '@mui/material';
 import axios from 'axios';
 import ApplicantNavbar from './../../components/header/ApplicantNavbar';
@@ -7,6 +7,7 @@ import Searchbar from '../../components/searchbar/Searchbar';
 
 const ApplicantScholarships = () => {
   const [scholarships, setScholarships] = useState([]);
+  const [filteredScholarships, setFilteredScholarships] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -21,14 +22,23 @@ const ApplicantScholarships = () => {
     }
   };
 
+  const handleSearch = (query) => {
+    const filteredResults = scholarships.filter(
+      (scholarship) =>
+        scholarship.scholarship_name.toLowerCase().includes(query.toLowerCase()) ||
+        scholarship.category.toLowerCase().includes(query.toLowerCase()) ||
+        scholarship.description.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredScholarships(filteredResults);
+  };
+
   return (
     <div>
       <ApplicantNavbar />
       <Container>
-        
         <Box mt={4}>
-        <Searchbar />
-          {scholarships.map((scholarship) => (
+          <Searchbar onSearch={handleSearch} />
+          {(filteredScholarships.length > 0 ? filteredScholarships : scholarships).map((scholarship) => (
             <Paper key={scholarship.id} elevation={3} style={{ padding: '20px', marginBottom: '20px' }}>
               <Typography variant="h5" gutterBottom>
                 {scholarship.scholarship_name}
