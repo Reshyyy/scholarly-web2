@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Paper, Typography, Container, Box } from '@mui/material';
+import { Paper, Typography, Container, Box, Button } from '@mui/material';
 import axios from 'axios';
+import ApplicantNavbar from '../../components/header/ApplicantNavbar';
 
 const ViewDetails = () => {
     const { id } = useParams();
@@ -22,7 +23,10 @@ const ViewDetails = () => {
     
     
     return (
+        <>
+        <ApplicantNavbar />
         <Container>
+            
             {scholarshipDetails && (
                 <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
                     <Typography variant="h5" gutterBottom>
@@ -54,6 +58,8 @@ const ViewDetails = () => {
                 </Paper>
             )}
         </Container>
+        </>
+        
     );
 };
 

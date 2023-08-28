@@ -53,12 +53,11 @@ const ApplicantScholarships = () => {
                 Amount: {scholarship.amount}
               </Typography>
               <Box display="flex" justifyContent="center" marginTop="10px">
-                {/* Use Link to navigate to the ViewDetails page */}
                 <Button
                   variant="outlined"
                   color="primary"
                   component={Link}
-                  to={`/scholarship/${scholarship.id}`} // Adjust the route as needed
+                  to={`/scholarship/${scholarship.id}`}
                 >
                   View Details
                 </Button>

@@ -34,6 +34,7 @@ import AdminGenerateReport from './admin/components/sidebar/AdminComponents/Admi
 import ViewDetails from './pages/Applicant/ViewDetails';
 
 
+
 function App() {
 
   return (
@@ -50,9 +51,9 @@ function App() {
         {/* Applicant Side */}
         <Route path="/applicant-home" element={<ApplicantHome />} />
         <Route path="/recommendations" element={<ApplicantRecommendations />} />
-        <Route path="/applicant-scholarships" element={<ApplicantScholarships />} />
         <Route path="/applicant-about" element={<ApplicantAbout />} />
-        <Route exact path="/scholarship/:id" component={ViewDetails} />
+        <Route path="/applicant-scholarships" element={<ApplicantScholarships />} />
+        <Route exact path="/scholarship/:id" element={<ViewDetails/>} />
         {/* Grantor Side */}
         <Route path="/grantor_home" element={<GrantorHome />} />
         <Route path="/grantor-register2" element={<GrantorRegister2 />} />
