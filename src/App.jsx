@@ -32,6 +32,7 @@ import AdminDashboard from './admin/components/sidebar/AdminComponents/AdminDash
 import AdminUserManagement from './admin/components/sidebar/AdminComponents/AdminUserManagement';
 import AdminGenerateReport from './admin/components/sidebar/AdminComponents/AdminGenerateReport';
 import ViewDetails from './pages/Applicant/ViewDetails';
+import ApplicantProfile from './pages/Applicant/ApplicantProfile';
 
 
 
@@ -53,7 +54,8 @@ function App() {
         <Route path="/recommendations" element={<ApplicantRecommendations />} />
         <Route path="/applicant-about" element={<ApplicantAbout />} />
         <Route path="/applicant-scholarships" element={<ApplicantScholarships />} />
-        <Route exact path="/scholarship/:id" element={<ViewDetails/>} />
+        <Route exact path="/scholarship/:id" element={<ViewDetails />} />
+        <Route path="/applicant-profile" element={<ApplicantProfile />} />
         {/* Grantor Side */}
         <Route path="/grantor_home" element={<GrantorHome />} />
         <Route path="/grantor-register2" element={<GrantorRegister2 />} />

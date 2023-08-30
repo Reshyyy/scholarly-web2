@@ -95,7 +95,7 @@ const ApplicantNavbar = () => {
           transformOrigin={{ horizontal: 'right', vertical: 'top' }}
           anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
         >
-          <MenuItem onClick={handleClose}>
+          <MenuItem component={RouterLink} to="/applicant-profile" onClick={handleClose}>
             <Avatar /> My Profile
           </MenuItem>
         </Menu>
