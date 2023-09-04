@@ -13,8 +13,8 @@ const Home = () => {
     <>
       <Navbar3 />
       <LandingPage />
-      <Steps />
-      <Testimonials />
+      <Steps2 />
+      {/*<Testimonials />*/}
     </>
   );
 };

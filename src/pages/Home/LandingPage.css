@@ -1,0 +1,14 @@
+/* LandingPage.css */
+
+/* Style the student image for smaller screens */
+@media (max-width: 768px) {
+    .student-image {
+      width: 100%; /* Make the image width 100% of the container */
+      height: auto; /* Allow the image to maintain its aspect ratio */
+      margin: 0 auto; /* Center the image horizontally */
+      display: block; /* Remove any residual spacing */
+    }
+}
+  
+  /* Add additional responsive styles as needed */
+  

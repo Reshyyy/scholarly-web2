@@ -41,7 +41,6 @@ function App() {
   return (
     <Router>
     <div>
-    
       <Routes>
         {/* Guest Side */}
         <Route path="/" element={<Home />} />
