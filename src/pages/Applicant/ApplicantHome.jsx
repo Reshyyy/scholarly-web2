@@ -32,6 +32,7 @@ const ApplicantHome = () => {
           <h1>Welcome User! </h1>
         </Box>
         
+        
         <Box className="flexbox-container"
           sx={{
             background: '#fff',
