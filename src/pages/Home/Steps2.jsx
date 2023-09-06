@@ -31,7 +31,7 @@ function Steps2() {
             >
                 Find the best <br />scholarships for you.
             </Typography>
-            <img src={stepsImage} className="steps2-image" alt="steps-image" width="500px" height="400px" style={{borderRadius:'15px', marginTop: '30px'}} />
+            <img src={stepsImage} className="steps2-image" alt="steps-image" width="500px" height="400px" style={{borderRadius:'15px', marginTop: '30px', maxWidth: '100%'}} />
           </Grid>
           <Grid item xs={12} sm={6} mt={15}>
             <Typography fontSize={24} fontWeight='bold' color='#fff'>

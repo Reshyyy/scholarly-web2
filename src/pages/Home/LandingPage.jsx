@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Container, Typography, Grid, Button } from '@mui/material';
 import studentImage from './../../assets/student.png';
 import { useNavigate } from 'react-router-dom';
-import './LandingPage.css'; // Create a CSS file for styling
+import './LandingPage.css';
 
 function LandingPage() {
   const navigate = useNavigate();
